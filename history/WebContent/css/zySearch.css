@@ -1,0 +1,69 @@
+@CHARSET "UTF-8"; 
+
+.zySearch{
+	float: left;
+	top: 0px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.zySearch .search-img{ 
+    background: url("../images") no-repeat scroll left top transparent;
+    display: block;
+    height: 0;
+    left: 39%;
+    margin-left: 250px;
+    position: absolute;
+    top: 200px;
+    width: 24px;
+}
+
+.zySearch .search-input{ 
+	color: #999;
+	border: 1px solid #D0D0D0;
+    height: 42px;
+    line-height: 42px;
+    margin-right: 0px;
+	margin-left: 280px;
+	margin-top: 60px;
+    padding: 0 10px;
+    width: 550px;
+}
+
+.zySearch .search-btn{
+    background: none repeat scroll 0 0 #009FCC;
+    border: 0 none;
+    border-radius: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 45px;
+    line-height: 42px;
+    padding: 0;
+    vertical-align: baseline !important;
+    width: 160px;
+    margin-top: 62px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 22px;
+    display: inline-block;
+    
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

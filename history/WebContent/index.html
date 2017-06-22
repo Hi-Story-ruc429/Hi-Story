@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=1024">
+        
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/typeahead.bundle.js"></script>
+        <script src="js/bloodhound.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script type="text/jscript">
+			$(function(){
+			//首页大事记
+			$('.course_nr2 li').hover(function(){
+			$(this).find('.shiji').slideDown(600);
+				},function(){
+					$(this).find('.shiji').slideUp(400);
+					});
+			});
+		</script>
+<!--   
+        <script>
+      	  	$(function(){
+			//首页大事记
+			$('.course_nr2 li').hover(function(){
+			$(this).find('.shiji').slideDown(600);
+				},function(){
+					$(this).find('.shiji').slideUp(400);
+				});
+			});
+		</script>
+ -->
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/suggestion.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/signin.css">
+        <link rel="stylesheet" type="text/css" href="css.css" />
+    </head>
+    <title>Hi,story</title>
+    <body style=text-align:center>
+
+	
+        <div class="container-fluid" style="margin-top:8%">
+ 			<div class="row">
+	            <div class="col-md-4"></div>
+	            <div class="col-md-4" style="text-align: center; display:block"><img src="./logo/title.png"></div>
+	            <div class="col-md-4"></div>
+       		</div>
+       		
+
+	
+
+         	<div class="row">
+                <div class="col-md-3"></div>
+                 <div class="form-index" >
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="typeahead form-control input-lg" autocomplete="off" name="query">
+                            <span class="input-group-btn" id = "search_btn">
+                                 <button class="btn btn-primary btn-lg" type="submit" action="http://www.baidu.com/baidu" target="_blank">
+                                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+            
+         
+        <div id="time" style="margin-top:80px;text-align:center">
+        	<div class="course" style="text-align: center;">
+				<div class="clearfix web_widht course_nr">
+	    			<ul class="course_nr2">
+		      			<li>上古
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/shanggu/" target="_blank">
+									<button id = "search_btn">
+									</button>
+								</a>
+			          			<h1>上古</h1>
+		          				<p>
+		          					<p>公元前2100之前</p>
+		          				</p>
+		        			</div>
+		      			</li>
+		      			
+		      			<li>夏朝
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/xiachao/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>夏朝</h1>
+		          				<p>
+		          					<p>约公元前2100----1600年 约500年</p>
+		          				</p>
+		        			</div>
+		      			</li>
+		      
+		      			<li>商朝
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/shangchao/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>商朝</h1>
+		          				<p>
+		          					<p>约公元前1600----1028年 约550年以上</p>
+		          				</p>
+		        			</div>
+		      			</li>
+		      
+		      			<li>周朝
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/zhouchao/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>周朝</h1>
+		          				<p>
+		          					<p>公元前1027----475年 共552年</p>
+		          				</p>
+		        			</div>
+		      			</li>
+		      
+		      			<li>春秋战国
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/chunqiu/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>春秋战国</h1>
+		          				<p>
+		          				<p>公元前770----221年 共549年</p>
+		          				</p>
+		        			</div>
+		      			</li>
+		      
+		      			<li>秦朝
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/qinchao/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>秦朝</h1>
+		          				<p>
+		          					<p>公元前221----206年 共 15年</p>
+		          				</p>
+		        			</div>
+		      			</li>
+		      
+		      			<li>汉朝
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/hanchao/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>汉朝</h1>
+		          				<p>
+		          					<p>公元前206----公元220年 共426年</p>
+		          				</p>
+		        			</div>
+		      			</li>
+			  
+			  			<li>三国
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/sanguo/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>三国</h1>
+		          				<p>
+		          					<p>公元220----280年 共 60 年</p>
+		          				</p>
+		        			</div>
+		      			</li>
+			  			<li>两晋南北朝
+					        <div class="shiji">
+								<a href="http://www.lishi.com/chaodai/jinchao/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>两晋南北朝</h1>
+		          				<p>
+		          					<p>公元265----589年 共326年</p>
+		          				</p>
+		        			</div>
+		      			</li>
+			  			
+			  			<li>隋朝
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/suichao/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>隋朝</h1>
+		          				<p>
+		          					<p>公元581----618年 共 37 年</p>
+		          				</p>
+		        			</div>
+		      			</li>
+			  
+			  			<li>唐朝
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/tangchao/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>唐朝</h1>
+		          				<p>
+		          					<p>公元618----960年 共343年</p>
+		          				</p>
+		        			</div>
+		      			</li>
+			 
+			 		 	<li>宋朝
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/songchao/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>宋朝</h1>
+		          				<p>
+		          					<p>公元960----1279年 共320年</p>
+		          				</p>
+		        			</div>
+		      			</li>
+			  
+			  			<li>元朝
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/yuanchao/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>元朝</h1>
+		          				<p>
+		          					<p>公元1271----1368年 共 98 年</p>
+		          				</p>
+		        			</div>
+		      			</li>
+			  
+			  			<li>明朝
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/mingchao/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>明朝</h1>
+		          				<p>
+		          					<p>公元1368----1644年 共276年</p>
+		          				</p>
+		        			</div>
+		      			</li>
+			  
+			  			<li>清朝
+		        			<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/qingchao/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+		          				<h1>清朝</h1>
+		          				<p>
+		          					<p>公元1644----1911年 共267年</p>
+		          				</p>
+		        			</div>
+		      			</li>
+		
+			            <li>民国
+	        				<div class="shiji">
+								<a href="http://www.lishi.com/chaodai/minguo/" target="_blank">
+									<button id = "dynasty_btn">
+									</button>
+								</a>
+	          					<h1>民国</h1>
+	          					<p>
+	          						<p>公元1911----1949年 共38年</p>
+	          					</p>
+	        				</div>
+	      				</li>
+    		</ul>
+  	   			</div>
+  	 		</div>
+  		</div>>
+
+
+        <div class="container foot" style = " margin-top: 260px;">
+            <footer>
+                <p class="text-center">
+                     Hi,story.Copyright © 2017 Renming University of China. 
+                </p>
+            </footer>
+        </div>
+
+<!--  
+    <form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+    	<input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+    	<a href="https://www.baidu.com/" target="_blank">
+        <img src="https://www.baidu.com/img/baidu_jgylogo3.gif" alt="Baidu" align="bottom" border="0">
+    	</a>
+    	<input type="text"  onfocus="checkHttps" name="word"  size="30">
+    	<input type="submit"value="百度搜索">
+	</form>
+	    
+
+	<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+	<script>
+    	function checkHttps () {
+        	BaiduHttps.useHttps();    
+    	};
+    	function baiduWithHttps (formname) {
+        	var data = BaiduHttps.useHttps();
+        	if (data.s === 0) {
+            	return true;
+        	}
+        	else {
+           	 	formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+            	return true;
+        	}
+    	};
+    </script>	
+ -->    	
+ 	
+		<script>
+		
+		    //从缓存中检索
+		    $("#search_btn").click(function () {
+     		   window.location.href="./search.html";
+   			 });
+		    //全部删除之后，跳不过去
+		    document.onkeydown = function(event){
+        	//捕获Enter按键事件
+        	//前两行一起会出现乱码，先按空格键再输入即可
+        	//删除第一行的效果：出现英文乱码
+        	//删除第二行的效果：出现乱码，先按空格键再进行输入
+             $.cookie("key", String.fromCharCode(event.keyCode).toLowerCase());
+             //$.cookie('queryHistary', String.fromCharCode(event.keyCode).toLowerCase());
+			 window.location.href = "./search.html";
+   			 }
+		
+            var bestPictures = new Bloodhound({
+            datumTokenizer: Bloodhound.tokenizers.obj.nonword('value'),
+            queryTokenizer: Bloodhound.tokenizers.nonword,
+            limit: 10,
+            remote: '/history/suggest?keyword=%QUERY',
+            });
+
+            bestPictures.initialize();
+
+            $('.typeahead').typeahead( {
+			
+                hint: true,
+                highlight: true,
+                minLength: 1
+            }, {
+                name: 'best_pictures',
+                displayKey: 'value',
+                source: bestPictures.ttAdapter(),
+            });
+        </script>
+    
+    
+    </body>
+</html>
